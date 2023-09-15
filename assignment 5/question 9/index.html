@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var color=["red","green","blue","orange","purple"];
+        console.log(color);
+        document.write(color);
+        var input1=prompt("what colour do you want to add at begining");
+        color.unshift(input1);
+        console.log(color);
+        document.write("<br>" + "after adding at begining: " + color);
+        var input2=prompt("what color do you want to add at end");
+        color.push(input2);
+        console.log(color);
+        document.write("<br>" + "after adding at end: " + color);
+        var input3=prompt("what colour do you want to add at begining");
+        var input4=prompt("what colour do you want to add at begining");
+        color.unshift(input3);
+        color.unshift(input4);
+        console.log(color);
+        document.write("<br>" + "after adding two more colours at begining: " + color);
+        color.shift();
+        console.log(color);
+        document.write("<br>" + "after deleting first colour: " + color);
+        color.pop();
+        console.log(color);
+        document.write("<br>" + "after deleting last colour: " + color);
+        var remove1=prompt("at which index do you want to add colour");
+        var input5=prompt("which colour do you want to add that index");
+        color.splice(remove1,0,input5); 
+        document.write("<br>" + "after adding at specific position colour: " + color);
+        var input6=prompt("at which index do you want to delete colour");
+        var input7=prompt("how many colours do you want to delete");
+        color.splice(input6,input7);
+        document.write("<br>" + "updated array: " + color);
+
+    </script>
+</body>
+</html>
